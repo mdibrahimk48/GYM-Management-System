@@ -1,0 +1,111 @@
+<?php
+session_start(); 
+
+?>
+
+<!--A Design by gym
+Author: Al-Kawsar Mojumdar
+-->
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>M3 Fitness Gym</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<link href='//fonts.googleapis.com/css?family=Quattrocento+Sans' rel='stylesheet' type='text/css'>
+<link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
+<style type="text/css">
+	.abc{
+		webkit-appearance: none;
+    font-family: 'Quattrocento Sans', sans-serif;
+    color: #ffffff;
+    background: #5b9a68;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    width: 90%;
+    text-align: center;
+    display: inline-block;
+    text-transform: uppercase;
+    padding: 10px 30px;
+    font-size: 1em;
+    transition: 0.5s ease;
+    -moz-transition: 0.5s ease;
+    -o-transition: 0.5s ease;
+    -webkit-transition: 0.5s ease;
+	}
+
+</style>
+</head>
+<body>
+<div class="h_bg">
+
+	<div class="content">
+			<div class="wrap">
+			<!---start-login---->
+			<div class="contact">				
+				<div class="col span_1_of_3">
+				</div>				
+				<div class="col span_2_of_3">
+				  <div class="contact-form">
+				  	<h3>Log In Form</h3>
+					    <form method="post" action="login.php" onSubmit="return check(this)">
+							<div>
+						     	<span><label>Mobile <font color="red">*</font></label></span>
+						    	<span><input name="mobile" type="text" class="mobile"></span>
+						    </div>
+							 <div>
+						    	<span><label>Password <font color="red">*</font></label></span>
+						    	<span><input name="password" type="password" class="password"></span>
+						    </div>
+						   <div>
+						   		<span><input type="submit" class="" value="Log In"></span>
+						   		
+						  </div>
+						   <div>
+						   		<span><a class="abc" type="submit" href="Registration.php">Registration</a></span>
+						  </div>
+					    </form>
+					   
+
+				    </div>
+  				</div>		
+  				<div class="clear"> </div>		
+			  </div>
+			  </div>
+			<!---End-login---->
+		</div>
+	
+<div class="footer specials">
+<div class="wrap">
+	<div class="footer_main1">
+		<div class="footer-grid">
+			<h3>WELCOME!</h3>
+			<p>Welcome to the M3 Fitness Gym! We hope you will appreciate our services and opportunities. We offer students and our loyal members and sale Gym medicine for them. Here are some them </p>
+			<form action="search.php" method="get" accept-charset="utf-8" class="nav-form">
+                 <input type="text" name="s" onblur="if(this.value=='') this.value=''" onfocus="if(this.value =='' ) this.value=''" value=" ">
+                 <a href="#" onclick="document.getElementById('search-form').submit()" class="sub_button1">Subscribe</a>
+            </form>
+            <div class="clear"></div>
+		</div>
+		<div class="footer-nav1">
+        	<ul>
+        		<li id="twtr"><a href=""><img src="images/twitter.png" alt="" title="Twitter"></a></li>
+            	<li id="fb"><a href=""><img src="images/fb.png" alt="" title="facebook"></a></li>
+                <li id="feed"><a href=""><img src="images/feed.png" alt="" title="Feed"></a></li>
+                <li id="plus"><a href=""><img src="images/plus.png" alt="" title="Plus"></a></li>
+			</ul>
+        </div>
+	</div>
+</div>
+</div>
+</div>
+<div class="ftr1-bg">
+<div class="wrap">
+<div class="footer1">
+	<p class="link"><span>© All rights reserved | Design by&nbsp; Al-Kawsar Mojumdar</span></p>
+</div>
+</div>
+</div>
+</body>
+</html>
